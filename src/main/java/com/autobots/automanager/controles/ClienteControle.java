@@ -32,7 +32,6 @@ public class ClienteControle {
 		if (cliente.isPresent()) {
 			return new ResponseEntity<Cliente>(cliente.get(), HttpStatus.OK);
 		} else {
-			// Se não existir, retornamos 404 Not Found
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
